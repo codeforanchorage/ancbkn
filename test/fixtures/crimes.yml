@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: MyString
+  name: MyString
+  lat: 9.99
+  lng: 9.99
+  rawDateFormat: 2013-07-29 22:11:00
+  reportNumber: 1
+  incidentTime: 2013-07-29 22:11:00
+  street: MyString
+
+two:
+  code: MyString
+  name: MyString
+  lat: 9.99
+  lng: 9.99
+  rawDateFormat: 2013-07-29 22:11:00
+  reportNumber: 1
+  incidentTime: 2013-07-29 22:11:00
+  street: MyString
