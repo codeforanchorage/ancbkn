@@ -4,9 +4,9 @@ ancbkn
 Prerequisites
 -------------
 
-Ruby 2.0
-Rails 4.0
-Postgresql
+* Ruby 2.0
+* Rails 4.0
+* Postgresql
 
 
 Postgres Configuration
