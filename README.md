@@ -8,26 +8,8 @@ Prerequisites
 * Rails 4.0
 * Postgresql
 
-
-Postgres Configuration
-----------------------
-
-Once prerequisites are installed, local test and development databases should be configured.
-
-Create test and development databases either via pgAdmin or through psql from the terminal.
-
-New databases:
-
-    Development: ancbkn_development
-    Test: ancbkn_test
-
-New login role:
-
-    User: ancbkn
-    Password: allofthedata
-
-App setup
----------
+Application setup
+-----------------
 
 Clone the repository:
 
@@ -37,6 +19,15 @@ Install dependencies:
 
     bundle install
 
+Create new Postgres login role:
+
+    user: ancbkn
+    password: allofthedata
+    
+Create local databases:
+
+    rake db:create:all
+    
 Run database migration:
 
     rake db:migrate
