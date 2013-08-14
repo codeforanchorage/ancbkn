@@ -16,10 +16,14 @@ Once prerequisites are installed, local test and development databases should be
 
 Create test and development databases either via pgAdmin or through psql from the terminal.
 
+New databases:
+
     Development: ancbkn_development
     Test: ancbkn_test
 
-    New login role: ancbkn
+New login role:
+
+    User: ancbkn
     Password: allofthedata
 
 App setup
