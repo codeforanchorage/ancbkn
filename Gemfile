@@ -11,6 +11,14 @@ gem 'pg'
 
 gem 'heroku'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.13'
+  gem 'factory_girl_rails'
+  gem 'capybara', '~> 2.1.0'
+  gem 'guard-rspec' 
+  gem 'launchy', '~> 2.3.0'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
