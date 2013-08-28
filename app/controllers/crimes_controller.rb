@@ -19,11 +19,18 @@ class CrimesController < ApplicationController
   # POST /crimes.json
   def create
     @crime = Crime.new(crime_params)
+    logger.info(crime_params)
 
     if @crime.save
       render json: @crime, status: :created, location: @crime
     else
       render json: @crime.errors, status: :unprocessable_entity
+    end
+  end
+
+  def bulk
+    crimes_params.each do |i|
+      Crime.create(i[:crime])
     end
   end
 
@@ -52,5 +59,9 @@ end
 private
   def crime_params
     params.require(:crime).permit(:code, :name, :lat, :lng, :rawDateFormat, :reportNumber, :incidentTime, :street)
+  end
+
+  def crimes_params
+    params.require(:crimes)
   end
 
